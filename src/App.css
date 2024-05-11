@@ -46,3 +46,53 @@ body {
 .filled {
     fill: var(--fill);
 }
+
+
+td {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: start;*/
+    /*justify-content: start;*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ic_c, .ic_b {
+    fill: transparent;
+    color: var(--bg);
+    stroke: var(--fill);
+    stroke-width: 2vw;
+}
+
+.ic_c {
+    fill: var(--fill);
+    stroke-width: 1vw;
+}
+
+.price_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu td {
+    /*display: flex;*/
+    text-align: start;
+}
+
+li+ li {
+    margin-top: 4vw;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu svg {
+    height: 13vw;
+    margin-right: 2vw;
+}

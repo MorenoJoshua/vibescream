@@ -1,5 +1,6 @@
 import './App.css';
 import React, {StyleHTMLAttributes, useEffect} from "react";
+import Menu from "./components/sabores.tsx";
 
 const colors = [
     '#578ac0',
@@ -101,20 +102,37 @@ function App() {
                 paddingTop: "30px",
                 paddingBottom: "100px",
             }}>
-                <a style={{
-                    color: fill,
-                    filter: `drop-shadow(0.5vw 0.4vw 0 ${drop})`,
-                }}
-                   href={'https://instagram.com/vibes_cream'}><IGLogo style={{
-                    fill: fill,
-                }}/>Instagram</a>
-                <a style={{
-                    color: fill,
-                    filter: `drop-shadow(0.5vw 0.4vw 0 ${drop})`,
-                }}
-                   href={'https://wa.me/+526643557882'}><WSLogo style={{
-                    fill: fill,
-                }}/>Whatsapp</a>
+            </div>
+            <div style={{
+                flex: 1,
+                gridArea: "links",
+                justifyContent: "space-around",
+                alignItems: 'center',
+                paddingTop: "30px",
+                paddingBottom: "100px",
+                flexDirection: 'column'
+            }}>
+                <Menu bg={bg} fill={fill} drop={drop}/>
+                <div style={{
+                    display: "flex",
+                    marginTop: "14vw",
+                    justifyContent: "space-around"
+                }}>
+                    <a style={{
+                        color: fill,
+                        filter: `drop-shadow(0.5vw 0.4vw 0 ${drop})`,
+                    }}
+                       href={'https://instagram.com/vibes_cream'}><IGLogo style={{
+                        fill,
+                    }}/>Instagram</a>
+                    <a style={{
+                        color: fill,
+                        filter: `drop-shadow(0.5vw 0.4vw 0 ${drop})`,
+                    }}
+                       href={'https://wa.me/+526643557882'}><WSLogo style={{
+                        fill,
+                    }}/>Whatsapp</a>
+                </div>
             </div>
         </>
     )
