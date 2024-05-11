@@ -1,0 +1,48 @@
+:root {
+    --drop: #578ac0;
+    --fill: #f1f2f2;
+    --bg: #f3ea59;
+}
+
+a {
+    color: var(--fill);
+}
+
+body {
+    flex: 1;
+}
+
+#root {
+    display: grid;
+    height: 100svh;
+    grid-template-areas: "svg" "links";
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+}
+
+.c {
+    stroke: var(--drop, #578ac0);
+}
+
+.c, .d {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
+}
+
+.e {
+    fill: var(--bg, #f3ea59);
+    stroke-width: 0px;
+}
+
+.d {
+    stroke: var(--fill, #f1f2f2);
+}
+
+.filled {
+    fill: var(--fill);
+}
